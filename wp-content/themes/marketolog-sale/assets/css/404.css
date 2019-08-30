@@ -1,0 +1,43 @@
+
+body {
+    color : #161616;
+    background-color: #161616;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-fong-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 404 */
+.errorbox{
+    color: #161616;
+    position: absolute;
+        font-family: 'Gosha Sans';
+    user-select:none;
+    margin-left: 32%;
+    font-weight: bold;
+    line-height: 32px;
+    font-size: 30vw;
+    width: 50vw;
+    z-index: 2;
+    margin-top: 10.22%;
+    filter: blur(10px);
+    
+}
+.playground {
+    z-index: 0;
+    width: 100%;
+    height: 87vh;
+    background: #161616;
+    overflow: hidden;
+    position: relative;
+  }
+@media screen and (max-width: 960px) 
+  {
+    .errorbox{position: center;}
+}
+@media screen and (max-width: 414px) 
+  {
+    .errorbox{margin-left: 20%;margin-top: 50%; filter: blur(0px);
+       color: white;}
+}

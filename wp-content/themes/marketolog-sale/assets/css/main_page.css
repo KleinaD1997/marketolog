@@ -789,23 +789,6 @@ header {
   margin-bottom: 104px;
 }
 
-.section-cases #cpu {
-  background: url("http://marketolog.loc/wp-content/themes/marketolog-sale/assets/img/cpu_card_bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.section-cases #megapolis {
-  background: url("http://marketolog.loc/wp-content/themes/marketolog-sale/assets/img/megapolis_card_bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.section-cases #krasroad {
-  background: url("http://marketolog.loc/wp-content/themes/marketolog-sale/assets/img/krasroad_card_bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: bottom;
-}
 
 .btn-main {
   height: 80px;

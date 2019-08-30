@@ -7,6 +7,15 @@
  * @package marketolog-sale
  */
 
+// Подключение bootstrap navwlker
+if ( ! file_exists( get_template_directory() . '/wp-bootstrap-navwalker.php' ) ) {
+  // file does not exist... return an error.
+  return new WP_Error( 'wp-bootstrap-navwalker-missing', __( 'It appears the wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+} else {
+  // file exists... require it.
+    require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+}
+
 if ( ! function_exists( 'marketolog_sale_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -171,5 +180,52 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * Reviews post_type
+*/
+add_action('init', 'marketolog_reviews');
+function marketolog_reviews(){
+	register_post_type('reviews', array(
+		'labels'             => array(
+			'name'               => 'Отзывы',
+			'singular_name'      => 'Отзыв',
+			'add_new'            => 'Добавить новый отзыв',
+			'add_new_item'       => 'Новый отзыв',
+			'edit_item'          => 'Редактировать',
+			'new_item'           => 'Новый отзыв',
+			'view_item'          => 'Посмотреть',
+			'menu_name'          => 'Отзывы клиентов',
+			'all_items'			 => 'Все отзывы',
+
+		  ),
+		'public'             => true,
+		'supports'           => array('title','editor', 'custom-fields'),
+		'menu_icon'			 => 'dashicons-universal-access',
+		//'show_in_rest'		 => true,
+	) );
+}
+
+add_action('init', 'marketolog_cases');
+function marketolog_cases(){
+	register_post_type('cases', array(
+		'labels'             => array(
+			'name'               => 'Кейсы',
+			'singular_name'      => 'Кейс',
+			'add_new'            => 'Добавить новый кейс',
+			'add_new_item'       => 'Новый кейс',
+			'edit_item'          => 'Редактировать',
+			'new_item'           => 'Новый кейс',
+			'view_item'          => 'Посмотреть',
+			'menu_name'          => 'Кейсы в слайдере',
+			'all_items'			 => 'Все кейсы',
+
+		  ),
+		'public'             => true,
+		'supports'           => array('title','editor', 'custom-fields'),
+		'menu_icon'			 => 'dashicons-admin-page',
+		//'show_in_rest'		 => true,
+	) );
 }
 

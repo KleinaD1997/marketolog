@@ -51,11 +51,15 @@
               <p>Используем технологии привлечения клиента:</p>
             </div>
             <ul class="list collapse">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_1');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
         </div>
@@ -69,11 +73,15 @@
               <p>Пользователь кликает на объявление</p>
             </div>
             <ul class="list collapse">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+             <?php
+              $text_pyr = get_field('text_pyramid_2');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
         </div>
@@ -87,11 +95,15 @@
               <p>Пользователь попадает на сайт</p>
             </div>
             <ul class="list collapse">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_3');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
         </div>
@@ -105,11 +117,15 @@
               <p>Пользователь оставляет заявку или звонит</p>
             </div>
             <ul class="list collapse">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_4');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
         </div>
@@ -123,11 +139,15 @@
               <p>Пользователь покупает</p>
             </div>
             <ul class="list collapse">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_5');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
         </div>
@@ -141,11 +161,15 @@
               <p>Пользователь покупает второй раз</p>
             </div>
             <ul class="list collapse">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_6');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
         </div>
@@ -162,11 +186,14 @@
               <p>Используем технологии привлечения клиента:</p>
             </a>
             <ul class="list collapse" id="first">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+                $text_pyr = get_field('text_pyramid_1');
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
           <div class="col-12">
@@ -176,11 +203,15 @@
               <p>Пользователь кликает на объявление</p>
             </a>
             <ul class="list collapse" id="second">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_2');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
           <div class="col-12">
@@ -190,11 +221,15 @@
               <p>Пользователь попадает на сайт</p>
             </a>
             <ul class="list collapse" id="third">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_3');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
           <div class="col-12">
@@ -204,11 +239,15 @@
               <p>Пользователь оставляет заявку или звонит</p>
             </a>
             <ul class="list collapse" id="fourth">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_4');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
           <div class="col-12">
@@ -218,11 +257,15 @@
               <p>Пользователь покупает</p>
             </a>
             <ul class="list collapse" id="fifth">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_5');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
           <div class="col-12">
@@ -232,11 +275,15 @@
               <p>Пользователь покупает второй раз</p>
             </a>
             <ul class="list collapse" id="sixth">
-              <li>сайт</li>
-              <li>контекстная реклама</li>
-              <li>SEO-продвижение</li>
-              <li>таргетинг</li>
-              <li>доски объявлений</li>
+              <?php
+              $text_pyr = get_field('text_pyramid_6');
+              
+              ?>
+              <li><?php echo $text_pyr['nesting_1'];?></li>
+              <li><?php echo $text_pyr['nesting_2'];?></li>
+              <li><?php echo $text_pyr['nesting_3'];?></li>
+              <li><?php echo $text_pyr['nesting_4'];?></li>
+              <li><?php echo $text_pyr['nesting_5'];?></li>
             </ul>
           </div>
         </div>
@@ -292,108 +339,66 @@
             <p>— на одном регионе оптимизируем рекламную компанию, выводим экономику в плюс</p>
             <p>— масштабируем рекламные кампании на другие регионы</p>
           </div>
-          <a class="case-card offset-lg-1 col-lg-4 mt-lg-5 wow fadeInRight shadow" href="#" id="mega">
+          <a class="case-card offset-lg-1 col-lg-4 mt-lg-5 wow fadeInRight shadow" href="<?php the_field('megapolis_link')?>" id="mega">
             <span class="description">кейс</span>
             <span class="case-name">Мегаполис</span>
           </a>
         </div>
         <div class="row second-row">
-          <a class="case-card offset-lg-1 col-lg-4 mt-lg-5 wow fadeInLeft shadow" href="#">
+          <a class="case-card offset-lg-1 col-lg-4 mt-lg-5 wow fadeInLeft shadow" href="<?php the_field('chpu_link')?>">
             <span class="description">кейс</span>
             <span class="case-name">ЧПУ24</span>
           </a>
         </div>
         <div class="row third-row justify-content-end">
-          <a class="case-card col-lg-4 mt-lg-5 wow fadeInRight shadow" href="#">
+          <a class="case-card col-lg-4 mt-lg-5 wow fadeInRight shadow" href="<?php the_field('NIBK_link')?>">
             <span class="description">кейс</span>
             <span class="case-name">NIBK</span>
           </a>
         </div>
       </div>
     </section>
+<!-- Кейсы -->
+<?php 
+$posts = get_posts( array(
+  'post_type' => 'cases' ,
+  'posts_per_page' => 10,
+) );
+ if($posts):
+?>
 
-    <!-- HTML Никитоса -->
     <section class="section-cases position-relative">
       <div class="container">
         <div class="cases-topic wow fadeInUp">Кейсы</div>
       </div>
       <div class="cases-carousel wow fadeInUp" data-wow-duration="1.5s">
-        <div class="carousel-cell  col-lg-4 col-10 col-md-6" id="cpu">
+        <?php foreach ($posts as $post): ?>
+        <div class="carousel-cell  col-lg-4 col-10 col-md-6" style = "background: url('<?php the_field('background_image')?>') no-repeat;background-size: cover;background-position: bottom;">
           <div class="card-inner">
-            <h2>ЧПУ24</h2>
-            <a href="" class="top-link">перейти на сайт</a>
-            <p class="d-none d-sm-block">Сайт Красноярского станкостроительного завода. Информации мало, нужно хотя бы в
-              три-четыре строчки, но не
-              более.</p>
-            <p class="d-block d-sm-none">Сайт Красноярского станкостроительного завода.</p>
+            <h2><?= $post->post_title ?></h2>
+            <a href="<?php the_field('link_to_site')?>" class="top-link">перейти на сайт</a>
+            <p class="d-none d-sm-block"><?= $post->post_content ?></p>
+            <p class="d-block d-sm-none"><?= $post->post_content ?></p>
             <div class="row">
               <div class="col-5 col-md-4 pr-0">
-                <span class="num">90</span>
+                <span class="num"><?php the_field('number_of_leads_per_month')?></span>
                 <span class="desc">Количество лидов/месяц</span>
               </div>
               <div class="col-7 col-md-7 pr-0">
-                <span class="num">600 <span class="rub">руб</span></span>
+                <span class="num"><?php the_field('lead_cost')?> <span class="rub">руб</span></span>
                 <span class="desc">Стоимость лида</span>
               </div>
               <div class="w-100"></div>
               <div class="col-4">
-                <span class="num">6%</span>
+                <span class="num"><?php the_field('site_conversion')?>%</span>
                 <span class="desc">Конверсия сайта</span>
               </div>
             </div>
-            <a href="" class="a-btn">Смотреть кейс</a>
+            <a href="<?php the_field('link_to_case')?>" class="a-btn">Смотреть кейс</a>
           </div>
-        </div>
-        <div class="carousel-cell  col-lg-4 col-10 col-md-6" id="megapolis">
-          <div class="card-inner">
-            <h2>Мегаполис</h2>
-            <a href="" class="top-link">перейти на сайт</a>
-            <p class="d-none d-sm-block">Сайт Красноярского строительного холдинга. Здесь информации будет уже побольше,
-              четыре строки. Просто чтобы понять как это будет выглядеть</p>
-            <p class="d-block d-sm-none">Сайт Красноярского строительного холдинга.</p>
-            <div class="row">
-              <div class="col-5 col-md-4 pr-0">
-                <span class="num">90</span>
-                <span class="desc">Количество лидов/месяц</span>
-              </div>
-              <div class="col-7 col-md-7 pr-0">
-                <span class="num">150 <span class="rub">руб</span></span>
-                <span class="desc">Стоимость лида</span>
-              </div>
-              <div class="w-100"></div>
-              <div class="col-4">
-                <span class="num">4%</span>
-                <span class="desc">Конверсия сайта</span>
-              </div>
-            </div>
-            <a href="" class="a-btn">Смотреть кейс</a>
-          </div>
-        </div>
-        <div class="carousel-cell col-lg-4 col-10 col-md-6" id="krasroad">
-          <div class="card-inner">
-            <h2>Красроуд</h2>
-            <a href="" class="top-link">перейти на сайт</a>
-            <p>Аренда спецтехники в городе Красноярск. Информации мало, нужно хотя бы в три-четыре строчки, но не более.
-            </p>
-            <div class="row">
-              <div class="col-5 col-md-4 pr-0">
-                <span class="num">90</span>
-                <span class="desc">Количество лидов/месяц</span>
-              </div>
-              <div class="col-7 col-md-7 pr-0">
-                <span class="num">250 <span class="rub">руб</span></span>
-                <span class="desc">Стоимость лида</span>
-              </div>
-              <div class="w-100"></div>
-              <div class="col-4">
-                <span class="num">5%</span>
-                <span class="desc">Конверсия сайта</span>
-              </div>
-            </div>
-            <a href="" class="a-btn">Смотреть кейс</a>
-          </div>
-        </div>
-        <div class="arrows d-flex flex-row">
+      </div>
+     <?php endforeach; ?>
+         <div class="arrows d-flex flex-row">
           <button class="arrow left-arrow" id="prev">
             <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10.3028 18.1233L1.88055 9.70844M1.88055 9.70844L10.3028 1.29359M1.88055 9.70844H24.3398"
@@ -407,9 +412,17 @@
             </svg>
           </button>
         </div>
-      </div>
     </section>
-
+<?php endif;?>
+<!-- Кейсы закончились  -->
+<!-- Отзывы -->
+<?php 
+$posts = get_posts( array(
+  'post_type' => 'reviews' ,
+  'posts_per_page' => 10,
+) );
+ if($posts):
+?>
     <section class="section-reviews wow fadeInRight">
       <h1>Отзывы</h1>
       <div class="container-fluid">
@@ -417,84 +430,19 @@
           <div class="offset-1 col-10 col-sm-11 review">
             <div id="review-carousel" class="carousel slide" data-interval="false">
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <p>«В настоящее время наша компания “Красроуд” растет, что позволило сделать вывод о том, что грамотно
-                    настроенная контекстная реклама очень и очень хорошо работает в строительной нише. В нашем случае
-                    она показала кратный рост!»</p>
+                <?php $i = 0; foreach ($posts as $post): ?>
+                <div class="carousel-item <?php if(!$i) echo 'active'?>">
+                  <p><?= $post->post_content ?></p>
                   <div class="media">
-                    <img src="<?php bloginfo('template_url')?>/assets/img/main_page_Ellipse.png" class="mr-3 d-none d-sm-block" alt="...">
+                    <img src="<?php the_field('avatar_reviews')?>" class="mr-3 d-none d-sm-block" alt="...">
                     <div class="media-body">
-                      <h5 class="mt-0">— В. А. Зубенко</h5>
-                      генеральный директор, компания «Красроуд»
+                      <h5 class="mt-0">— <?php the_field('author_reviews')?></h5>
+                      <?php the_field('position_reviews')?>
                     </div>
                   </div>
-                  <a href="#" class="a-btn d-none d-sm-block">Смотреть полный отзыв</a>
+                  <a href="<?php the_field('link_to_reviews')?>" class="a-btn d-none d-sm-block">Смотреть полный отзыв</a>
                 </div>
-                <div class="carousel-item">
-                  <p>«В настоящее время наша компания “Красроуд” растет, что позволило сделать вывод о том, что грамотно
-                    настроенная контекстная реклама очень и очень хорошо работает в строительной нише. В нашем случае
-                    она показала кратный рост!»</p>
-                  <div class="media">
-                    <img src="<?php bloginfo('template_url')?>/assets/img/main_page_Ellipse.png" class="mr-3 d-none d-sm-block" alt="...">
-                    <div class="media-body">
-                      <h5 class="mt-0">— В. А. Зубенко</h5>
-                      генеральный директор, компания «Красроуд»
-                    </div>
-                  </div>
-                  <a href="#" class="a-btn d-none d-sm-block">Смотреть полный отзыв</a>
-                </div>
-                <div class="carousel-item">
-                  <p>«В настоящее время наша компания “Красроуд” растет, что позволило сделать вывод о том, что грамотно
-                    настроенная контекстная реклама очень и очень хорошо работает в строительной нише. В нашем случае
-                    она показала кратный рост!»</p>
-                  <div class="media">
-                    <img src="<?php bloginfo('template_url')?>/assets/img/main_page_Ellipse.png" class="mr-3 d-none d-sm-block" alt="...">
-                    <div class="media-body">
-                      <h5 class="mt-0">— В. А. Зубенко</h5>
-                      генеральный директор, компания «Красроуд»
-                    </div>
-                  </div>
-                  <a href="#" class="a-btn d-none d-sm-block">Смотреть полный отзыв</a>
-                </div>
-                <div class="carousel-item">
-                  <p>«В настоящее время наша компания “Красроуд” растет, что позволило сделать вывод о том, что грамотно
-                    настроенная контекстная реклама очень и очень хорошо работает в строительной нише. В нашем случае
-                    она показала кратный рост!»</p>
-                  <div class="media">
-                    <img src="<?php bloginfo('template_url')?>/assets/img/main_page_Ellipse.png" class="mr-3 d-none d-sm-block" alt="...">
-                    <div class="media-body">
-                      <h5 class="mt-0">— В. А. Зубенко</h5>
-                      генеральный директор, компания «Красроуд»
-                    </div>
-                  </div>
-                  <a href="#" class="a-btn d-none d-sm-block">Смотреть полный отзыв</a>
-                </div>
-                <div class="carousel-item">
-                  <p>«В настоящее время наша компания “Красроуд” растет, что позволило сделать вывод о том, что грамотно
-                    настроенная контекстная реклама очень и очень хорошо работает в строительной нише. В нашем случае
-                    она показала кратный рост!»</p>
-                  <div class="media">
-                    <img src="<?php bloginfo('template_url')?>/assets/img/main_page_Ellipse.png" class="mr-3 d-none d-sm-block" alt="...">
-                    <div class="media-body">
-                      <h5 class="mt-0">— В. А. Зубенко</h5>
-                      генеральный директор, компания «Красроуд»
-                    </div>
-                  </div>
-                  <a href="#" class="a-btn d-none d-sm-block">Смотреть полный отзыв</a>
-                </div>
-                <div class="carousel-item">
-                  <p>«В настоящее время наша компания “Красроуд” растет, что позволило сделать вывод о том, что грамотно
-                    настроенная контекстная реклама очень и очень хорошо работает в строительной нише. В нашем случае
-                    она показала кратный рост!»</p>
-                  <div class="media">
-                    <img src="<?php bloginfo('template_url')?>/assets/img/main_page_Ellipse.png" class="mr-3 d-none d-sm-block" alt="...">
-                    <div class="media-body">
-                      <h5 class="mt-0">— В. А. Зубенко</h5>
-                      генеральный директор, компания «Красроуд»
-                    </div>
-                  </div>
-                  <a href="#" class="a-btn d-none d-sm-block">Смотреть полный отзыв</a>
-                </div>
+               <?php $i++; endforeach; ?>
               </div>
               <div class="arrows d-flex flex-row">
                 <button class="arrow left-arrow" href="#review-carousel" role="button" data-slide="prev">
@@ -517,7 +465,8 @@
         </div>
       </div>
     </section>
-
+<?php endif;?>
+<!-- Отзывы закончились -->
     <section class="section-contact">
       <div class="container">
         <div class="row">

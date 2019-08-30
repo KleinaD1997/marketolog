@@ -23,6 +23,23 @@
     })
     wow.init();
   </script>
+<!-- Facebook Pixel Code 
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '690472421416234');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=690472421416234&ev=PageView&noscript=1"
+/></noscript>
+End Facebook Pixel Code -->
 </head>
 <body>
   <header>
@@ -46,32 +63,17 @@
           </svg>
         </button>
         <div id="my-nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Услуги и продукты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-            <li class="nav-item phone">
-              <a class="nav-link" href="#">+7 (950) 996-69-81</a>
-            </li> -->
-            <?php wp_nav_menu( array(
-                        'theme_location'  => 'header',
-                        'menu'            => '',
-                        'container'       => false,
-                        'menu_сlass'      => 'navbar-nav mr-auto',
-                        'echo'            => true,
-                        'fallback_cb'     => 'wp_page_menu',
-                        'before'          => '',
-                        'after'           => '',
-                        'link_before'     => '',
-                        'link_after'      => '',
-                        'items_wrap'      => '%3$s',
-                        'depth'           => 0,
-                        'walker'          => '',
-                      ) ); ?>
-          </ul>
+          <?php
+            wp_nav_menu( array(
+                'theme_location'  => 'header',
+                'menu_id'        => 'primary-menu',
+                'depth'           => 2,
+                'container'       => false,
+                'menu_class'      => 'navbar-nav ml-auto',
+                'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'          => new WP_Bootstrap_Navwalker()
+            ) );
+            ?>
         </div>
       </nav>
     </div>

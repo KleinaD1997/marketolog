@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Gosha Sans';
+  src: url("http://marketolog.loc/wp-content/themes/marketolog-sale/assets/fonts/GoshaSans-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gosha Sans';
+  src: url("http://marketolog.loc/wp-content/themes/marketolog-sale/assets/fonts/GoshaSans-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  background: #161616;
+   font-family: 'Gosha Sans';
+  overflow-x: hidden;
+}
+
+#block-card{
+    margin-top: 180px;
+}
+.block-info {
+    height: 400px;
+    background-color :#000000;
+    z-index: 1;
+    position: relative;
+    color :white;
+}
+.block-info p {
+padding-left: 80px;
+}
+
+.nTime {
+    font-family: 'Gosha Sans';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 0px;
+    font-size: 36px;
+    text-align: right;
+    padding-left: 40%; 
+    }
+.nTag {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 112px;
+    font-size: 36px;
+}
+.nAdr {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+}
+.nTel {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    font-size: 24px;
+}
+.nMail {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    font-size: 24px;
+}
+.nIcon i {
+    margin-left: -20px;
+    padding: 20px;
+    padding-bottom: 20px;  
+}
+
+#map {
+    z-index: 0;
+    margin-top: -8%;
+    margin-bottom: 10%;
+    position: relative;
+    width: 100%;
+    height: 47.5vh;
+    position: relative;
+}
+a
+{
+    color:white;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration:underline;
+     color:white;
+}
+.ymaps-layers-pane {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+}
+.ymaps-2-1-74-map ymaps, .ymaps-2-1-74-map ymaps:after, .ymaps-2-1-74-map ymaps:before
+{
+	filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+}
+
+
+/*=================footer==================*/
+.footer {
+  padding: 88px 80px 10px 160px;
+  background: #0A0A0A;
+}
+
+.footer .row {
+  margin-bottom: 100px;
+}
+
+.footer .container {
+  padding: 0;
+}
+
+.footer img {
+  width: 350px;
+  height: 135px;
+}
+
+.footer .right span {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  color: #D1D1D1;
+}
+
+.footer .right .first-line {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.footer .right .second-line {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 32px;
+}
+
+.footer .last-line {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #626262;
+}
