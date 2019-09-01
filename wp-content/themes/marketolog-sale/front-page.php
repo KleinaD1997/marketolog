@@ -479,25 +479,25 @@ $posts = get_posts( array(
             </div>
           </div>
           <div class="col-11 offset-lg-1 col-lg-5 right">
-            <form method="post">
+            <form method="post" action="mail/mail.php">
               <div class="form-group wow fadeInRight" data-wow-delay="100ms">
                 <label for="name-input">Введите ваше имя:</label>
-                <input type="text" class="form-control" id="name-input" aria-describedby="emailHelp"
+                <input type="text" name = "name" class="form-control" id="name-input" aria-describedby="emailHelp"
                   placeholder="например, Иван Иванов">
               </div>
               <div class="form-group wow fadeInRight" data-wow-delay="200ms">
                 <label for="phone-input">Введите ваш номер телефона:</label>
-                <input type="tel" class="form-control" id="phone-input" aria-describedby="emailHelp"
+                <input type="tel" name="phone" class="form-control" id="phone-input" aria-describedby="emailHelp"
                   placeholder="+7 (___) __-__">
               </div>
               <div class="form-group wow fadeInRight" data-wow-delay="300ms">
                 <label for="page-input">Вставьте ссылку на ваш сайт:</label>
-                <input type="text" class="form-control" id="page-input" aria-describedby="emailHelp"
+                <input type="text" class="form-control" name = "site" id="page-input" aria-describedby="emailHelp"
                   placeholder="например, apple.com">
               </div>
               <div class="form-group wow fadeInRight" data-wow-delay="400ms">
                 <label for="message-input">Введите ваше сообщение (необязательно):</label>
-                <textarea rows="4" class="form-control" id="message-input" aria-describedby="emailHelp"
+                <textarea rows="4" name = "message" class="form-control" id="message-input" aria-describedby="emailHelp"
                   placeholder="Текст сообщения"></textarea>
               </div>
               <button type="submit" class="btn-main col-sm-8 col-12 d-block wow fadeInRight"

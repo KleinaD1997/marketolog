@@ -1,0 +1,82 @@
+.modal-dialog {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  background:#161616;
+}
+.modal.show .modal-dialog 
+{
+	max-width: 100%;
+}
+.modal-header 
+{
+	border-bottom: 0px!important;
+}
+.modal.fade.show
+{
+	padding-right:0!important;
+}
+.close
+{
+	color:white;
+}
+.close:hover
+{
+	color:white;
+}
+/*=================footer==================*/
+.footer {
+  padding: 88px 80px 10px 160px;
+  background: #0A0A0A;
+}
+
+.footer .row {
+  margin-bottom: 100px;
+}
+
+.footer .container {
+  padding: 0;
+}
+
+.footer img {
+  width: 350px;
+  height: 135px;
+}
+
+.footer .right span {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  color: #D1D1D1;
+}
+
+.footer .right .first-line {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.footer .right .second-line {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 32px;
+}
+
+.footer .last-line {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #626262;
+}

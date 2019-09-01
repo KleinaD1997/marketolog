@@ -735,6 +735,164 @@ li.format-list-item::before {
 }
 
 /*===========section-contact=============*/
+.section-articles {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-articles .col-4,
+.section-articles .col-10 {
+  margin: 32px 0;
+}
+
+.section-articles .col-4 .card-inner,
+.section-articles .col-10 .card-inner {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  padding: 40px;
+  height: 100%;
+  min-height: 230px;
+  background: #0A0A0A;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.section-articles .col-4 .card-inner:hover,
+.section-articles .col-10 .card-inner:hover {
+  background: #2722F4;
+}
+
+.section-articles .col-4 .card-inner .top-line,
+.section-articles .col-10 .card-inner .top-line {
+  font-size: 12px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.section-articles .col-4 .card-inner h5,
+.section-articles .col-10 .card-inner h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.section-articles .col-4 .card-inner .a-btn,
+.section-articles .col-10 .card-inner .a-btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+}
+
+
+.section-articles .col-4 .card-inner .a-btn,
+.section-articles .col-10 .card-inner .a-btn {
+  font-weight: bold;
+  display: block;
+  margin-top: 24px;
+  position: absolute;
+  margin-bottom: 20px;
+  bottom: 0px;
+}
+
+.section-articles .col-4 .card-inner .a-btn::after,
+.section-articles .col-10 .card-inner .a-btn::after {
+  margin-left: 10px;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  background: #fff;
+  width: 50px;
+  vertical-align: middle;
+}
+
+
+.section-articles .top-line {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #D8D8D8;
+}
+
+.section-articles .header {
+  margin-bottom: 104px;
+}
+
+.section-articles .articles-carousel .carousel-cell {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  margin: 0 15px;
+  padding: 15px;
+  padding-bottom: 30px;
+  background: #0A0A0A;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.section-articles .articles-carousel .carousel-cell.is-selected {
+  background: #2722F4;
+}
+
+.section-articles .articles-carousel .carousel-cell .top-line {
+  font-size: 12px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.section-articles .articles-carousel .carousel-cell h5 {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  height: 78px;
+}
+
+.section-articles .articles-carousel .carousel-cell .a-btn {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.section-articles .articles-carousel .carousel-cell .a-btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.section-articles .articles-carousel .carousel-cell .a-btn {
+  font-weight: bold;
+  display: block;
+  margin-top: 24px;
+}
+
+.section-articles .articles-carousel .carousel-cell .a-btn::after {
+  margin-left: 10px;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  background: #fff;
+  width: 50px;
+  vertical-align: middle;
+}
+
+
+
+
+/*===========section-contact=============*/
 
 .section-contact {
     margin-bottom: 256px;

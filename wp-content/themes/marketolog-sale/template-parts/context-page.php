@@ -20,7 +20,7 @@
               <p class="col-lg-4 col-12 pr-0">Чтобы получить персональное коммерческое предложение пройдите опрос</p>
             </div>
             <div class="row">
-              <button class="btn-main col-lg-4 col-12">Начать опрос</button>
+              <button class="btn-main col-lg-4 col-12" data-toggle="modal" data-target="#ModalCenter">Начать опрос</button>
             </div>
           </div>
           <img src="<?php bloginfo('template_url')?>/assets/img/plane.png" alt="" class="plane offset-2 offset-lg-5 col-lg-8 col-12 wow fadeInUp"
@@ -206,53 +206,44 @@ $posts = get_posts( array(
     </section>
 <?php endif;?>
 <!-- Отзывы закончились -->
+   
+<?php 
+$posts = get_posts( array(
+  'post_type' => 'pages_blog' ,
+  'posts_per_page' => 9,
+  'category' => '6',
+) );
+ if($posts):
+?>
+
     <section class="section-articles wow fadeInUp">
       <div class="container">
         <h1 class="header">Читайте статьи по теме</h1>
       </div>
       <div class="container d-none d-sm-block">
         <div class="row">
+          <?php foreach ($posts as $post): ?>
           <div class="col-10 col-lg-4">
             <a href="" class="card-inner">
-              <span class="top-line">Введение</span>
-              <h5>Что такое контекстная реклама?</h5>
+              <span class="top-line"><?php the_field('tag_blog_pages')?></span>
+              <h5><?= $post->post_title ?></h5>
               <span class="a-btn">Читать статью</span>
             </a>
           </div>
-          <div class="col-lg-4 col-10">
-            <a href="" class="card-inner">
-              <span class="top-line">Хорошо и плохо</span>
-              <h5>Почему контекстная реклама не работает?</h5>
-              <span class="a-btn">Читать статью</span>
-            </a>
-          </div>
-          <div class="col-lg-4 col-10">
-            <a href="" class="card-inner">
-              <span class="top-line">Наш опыт</span>
-              <h5>Какая контекстная реклама работает?</h5>
-              <span class="a-btn">Читать статью</span>
-            </a>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
       <div class="articles-carousel d-block d-sm-none">
-        <a href="" class="carousel-cell col-8">
-          <span class="top-line">Введение</span>
-          <h5>Что такое контекстная реклама?</h5>
+        <?php foreach ($posts as $post): ?>
+        <a href="#" class="carousel-cell col-8">
+          <span class="top-line"><?php the_field('tag_blog_pages')?></span>
+          <h5><?= $post->post_title ?></h5>
           <span class="a-btn">Читать статью</span>
         </a>
-        <a href="" class="carousel-cell col-8">
-          <span class="top-line">Хорошо и плохо</span>
-          <h5>Почему контекстная реклама не работает?</h5>
-          <span class="a-btn">Читать статью</span>
-        </a>
-        <a href="" class="carousel-cell col-8">
-          <span class="top-line">Наш опыт</span>
-          <h5>Какая контекстная реклама работает?</h5>
-          <span class="a-btn">Читать статью</span>
-        </a>
+        <?php endforeach; ?>
       </div>
     </section>
+<?php endif;?>
     <section class="section-contact">
       <div class="container">
         <div class="row">
@@ -265,25 +256,25 @@ $posts = get_posts( array(
             </div>
           </div>
           <div class="col-11 offset-lg-1 col-lg-5 right">
-            <form method="post">
+            <form method="post" action="/mail/mail.php">
               <div class="form-group wow fadeInRight" data-wow-delay="100ms">
                 <label for="name-input">Введите ваше имя:</label>
-                <input type="text" class="form-control" id="name-input" aria-describedby="emailHelp"
+                <input type="text" name = "name" class="form-control" id="name-input" aria-describedby="emailHelp"
                   placeholder="например, Иван Иванов">
               </div>
               <div class="form-group wow fadeInRight" data-wow-delay="200ms">
                 <label for="phone-input">Введите ваш номер телефона:</label>
-                <input type="tel" class="form-control" id="phone-input" aria-describedby="emailHelp"
+                <input type="tel" name="phone" class="form-control" id="phone-input" aria-describedby="emailHelp"
                   placeholder="+7 (___) __-__">
               </div>
               <div class="form-group wow fadeInRight" data-wow-delay="300ms">
                 <label for="page-input">Вставьте ссылку на ваш сайт:</label>
-                <input type="text" class="form-control" id="page-input" aria-describedby="emailHelp"
+                <input type="text" class="form-control" name = "site" id="page-input" aria-describedby="emailHelp"
                   placeholder="например, apple.com">
               </div>
               <div class="form-group wow fadeInRight" data-wow-delay="400ms">
                 <label for="message-input">Введите ваше сообщение (необязательно):</label>
-                <textarea rows="4" class="form-control" id="message-input" aria-describedby="emailHelp"
+                <textarea rows="4" name = "message" class="form-control" id="message-input" aria-describedby="emailHelp"
                   placeholder="Текст сообщения"></textarea>
               </div>
               <button type="submit" class="btn-main col-sm-8 col-12 d-block wow fadeInRight"

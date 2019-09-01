@@ -37,6 +37,28 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** Схема сопоставления. Не меняйте, если не уверены. */
 define( 'DB_COLLATE', '' );
 
+/**phpmailer*/
+
+// Имя пользователя для SMTP авторизации
+define( 'SMTP_USER', 'daniel@marketolog.sale' );  
+// Пароль пользователя для SMTP авторизации
+define( 'SMTP_PASS', '19AaZ9bJ' );
+// Хост почтового сервера
+define( 'SMTP_HOST', 'smtp.mail.ru' );
+// Обратный Email
+define( 'SMTP_FROM', 'daniel@marketolog.sale' );
+// Имя для обратного мыла
+define( 'SMTP_NAME', 'Инженеры Продаж' );
+// Номер порта (25, 465, 587)
+define( 'SMTP_PORT', '465' ); 
+// Тип шифиования (ssl или tls)
+define( 'SMTP_SECURE', 'ssl' ); 
+// Включение/отключение шифрования
+define( 'SMTP_AUTH', true ); 
+// Режим отладки (0, 1, 2)
+define( 'SMTP_DEBUG', 0 );
+
+
 /**#@+
  * Уникальные ключи и соли для аутентификации.
  *

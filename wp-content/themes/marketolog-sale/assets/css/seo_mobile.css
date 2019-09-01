@@ -434,6 +434,18 @@
         font-size: 30px;
     }
 
+ /*===========section-articles==========*/
+    .section-articles .header {
+    text-align: center;
+    }
+
+  .section-articles .row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+
     /*===========section-contact==========*/
 
     .section-contact {
@@ -466,6 +478,14 @@
 }
 
 
+  .section-articles .header {
+    margin-bottom: 50px;
+  }
+
+  .section-articles .articles-carousel .carousel-cell .a-btn {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
 
 

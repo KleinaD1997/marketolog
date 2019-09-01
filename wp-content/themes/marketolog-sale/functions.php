@@ -137,6 +137,7 @@ function marketolog_sale_scripts() {
 	wp_enqueue_style( 'marketolog-sale-flickity', get_template_directory_uri() . '/assets/css/flickity.min.css' );
 	wp_enqueue_style( 'marketolog-sale-animate', get_template_directory_uri() . '/assets/css/animate.min.css' );
 	wp_enqueue_style( 'marketolog-sale-header', get_template_directory_uri() . '/assets/css/header.css' );
+	wp_enqueue_style( 'marketolog-sale-footer', get_template_directory_uri() . '/assets/css/footer.css' );
 
 
 	wp_enqueue_script( 'marketolog-sale-navigation', get_template_directory_uri() . '/js/navigation.js', false, null, true);
@@ -229,3 +230,44 @@ function marketolog_cases(){
 	) );
 }
 
+add_action('init', 'marketolog_pages_blog');
+function marketolog_pages_blog(){
+	register_post_type('pages_blog', array(
+		'labels'             => array(
+			'name'               => 'Блог для страниц',
+			'singular_name'      => 'Блог для страниц',
+			'add_new'            => 'Добавить новую блог-запись',
+			'add_new_item'       => 'Новая блог-запись',
+			'edit_item'          => 'Редактировать',
+			'new_item'           => 'Новая блог-запись',
+			'view_item'          => 'Посмотреть',
+			'menu_name'          => 'Блог для страниц',
+			'all_items'			 => 'Все кейсы',
+
+		  ),
+		'public'             => true,
+		'supports'           => array('title','editor', 'custom-fields'),
+		'taxonomies'         => array('category'),
+		'menu_icon'			 => 'dashicons-welcome-learn-more',
+		//'show_in_rest'		 => true,
+	) );
+}
+
+
+/**
+ * Настройка SMTP
+ *
+ * @param PHPMailer $phpmailer
+ */
+function marketolog_send_smtp_email( PHPMailer $phpmailer ) {
+  $phpmailer->isSMTP();
+  $phpmailer->Host       = SMTP_HOST;
+  $phpmailer->SMTPAuth   = SMTP_AUTH;
+  $phpmailer->Port       = SMTP_PORT;
+  $phpmailer->Username   = SMTP_USER;
+  $phpmailer->Password   = SMTP_PASS;
+  $phpmailer->SMTPSecure = SMTP_SECURE;
+  $phpmailer->From       = SMTP_FROM;
+  $phpmailer->FromName   = SMTP_NAME;
+}
+add_action( 'phpmailer_init', 'marketolog_send_smtp_email' );
